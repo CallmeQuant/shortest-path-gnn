@@ -1,0 +1,19 @@
+seed: 123
+graph_name: "graph3"  # Choose between 'graph1', 'graph2', 'graph3'
+feature_matrix: "default"
+source_node: 0
+target_node: 9
+K: 5 # Number of paths 
+hidden_dim: 32
+output_dim: 1
+dropout: 0.1
+normalization: "sym"
+num_layers: 4 # GAT only
+n_heads: 8 # GAT only
+num_epochs: 100
+learning_rate: 0.1
+device: "cpu"
+chebyshev_k: null
+model_type: "GAT"  # Models: 'Chebyshev GCN', 'Standard GCN', 'GAT', 'GNN'
+residual: true
+concat: true

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3c98fdfb369518c66d601b52d4ef2ac4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3c98fdfb369518c66d601b52d4ef2ac4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3c98fdfb369518c66d601b52d4ef2ac4 = L.map(
+                "map_3c98fdfb369518c66d601b52d4ef2ac4",
+                {
+                    center: [10.764258, 106.6822984],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_15f2bd7adb272ba666c86bdac868d586 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_15f2bd7adb272ba666c86bdac868d586.addTo(map_3c98fdfb369518c66d601b52d4ef2ac4);
+        
+    
+            var poly_line_dd8f87246863f03db94594f7f2f6419f = L.polyline(
+                [[10.764258, 106.6822984], [10.7642283, 106.6822104], [10.7652208, 106.6818448], [10.7655926, 106.6818746], [10.76594, 106.6824196], [10.7679292, 106.6855017], [10.7678492, 106.6856693], [10.7675751, 106.6862458], [10.7676448, 106.6863], [10.7680186, 106.6866424], [10.7683614, 106.687003], [10.7687685, 106.6874113], [10.7688726, 106.6875178], [10.7699916, 106.6885977], [10.7687369, 106.6896812], [10.7704446, 106.6920153], [10.7712328, 106.6931266], [10.7712084, 106.6933707], [10.7712944, 106.6934487], [10.7712549, 106.6937631], [10.7711701, 106.6954935], [10.7712246, 106.6954962], [10.7716294, 106.6952704], [10.7724371, 106.6948699], [10.772787, 106.6954284], [10.7731183, 106.69589], [10.7739958, 106.697121], [10.7748371, 106.6981499], [10.7758208, 106.6990461], [10.7768018, 106.6999227], [10.7779416, 106.7010248], [10.7791968, 106.702175], [10.7801873, 106.7010602], [10.7791303, 106.7001011], [10.7789434, 106.6999316], [10.7787528, 106.6997586]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_3c98fdfb369518c66d601b52d4ef2ac4);
+        
+    
+        var popup_7e256e75306c41d41438b4a3397fa68b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6aee5f118fd4c632354e0318c28bcc34 = $(`<div id="html_6aee5f118fd4c632354e0318c28bcc34" style="width: 100.0%; height: 100.0%;">Path 1: Cost 1.90</div>`)[0];
+                popup_7e256e75306c41d41438b4a3397fa68b.setContent(html_6aee5f118fd4c632354e0318c28bcc34);
+            
+        
+
+        poly_line_dd8f87246863f03db94594f7f2f6419f.bindPopup(popup_7e256e75306c41d41438b4a3397fa68b)
+        ;
+
+        
+    
+    
+            var marker_c3c6c9fa30b0dfefd5770b2251fafcd2 = L.marker(
+                [10.764258, 106.6822984],
+                {}
+            ).addTo(map_3c98fdfb369518c66d601b52d4ef2ac4);
+        
+    
+            var icon_811007407b5fec20c45b93410fc66a3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c3c6c9fa30b0dfefd5770b2251fafcd2.setIcon(icon_811007407b5fec20c45b93410fc66a3b);
+        
+    
+        var popup_e531bb09ba336e34091132c76f63cd5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_799d2ecd26b759dcadc2dd98c0002260 = $(`<div id="html_799d2ecd26b759dcadc2dd98c0002260" style="width: 100.0%; height: 100.0%;">Start: The Coffee Bean & Tea Leaf</div>`)[0];
+                popup_e531bb09ba336e34091132c76f63cd5d.setContent(html_799d2ecd26b759dcadc2dd98c0002260);
+            
+        
+
+        marker_c3c6c9fa30b0dfefd5770b2251fafcd2.bindPopup(popup_e531bb09ba336e34091132c76f63cd5d)
+        ;
+
+        
+    
+    
+            var marker_1bcdf7ee71d3f28ede0f940c6a39d12a = L.marker(
+                [10.7787528, 106.6997586],
+                {}
+            ).addTo(map_3c98fdfb369518c66d601b52d4ef2ac4);
+        
+    
+            var icon_2f75bff36063be305cc7ebccaa318079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1bcdf7ee71d3f28ede0f940c6a39d12a.setIcon(icon_2f75bff36063be305cc7ebccaa318079);
+        
+    
+        var popup_65c6165c5a35f549edba241d828f1158 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4db4807c0bc014f18b6430c0308155c6 = $(`<div id="html_4db4807c0bc014f18b6430c0308155c6" style="width: 100.0%; height: 100.0%;">End: Nhà thờ Đức Bà Sài Gòn</div>`)[0];
+                popup_65c6165c5a35f549edba241d828f1158.setContent(html_4db4807c0bc014f18b6430c0308155c6);
+            
+        
+
+        marker_1bcdf7ee71d3f28ede0f940c6a39d12a.bindPopup(popup_65c6165c5a35f549edba241d828f1158)
+        ;
+
+        
+    
+    
+            var poly_line_56f888f0d434ebc7c9ad2cae0fbbd861 = L.polyline(
+                [[10.764258, 106.6822984], [10.7642283, 106.6822104], [10.7652208, 106.6818448], [10.7655926, 106.6818746], [10.76594, 106.6824196], [10.7679292, 106.6855017], [10.7683539, 106.6845809], [10.7700336, 106.6861222], [10.7687685, 106.6874113], [10.7688726, 106.6875178], [10.7699916, 106.6885977], [10.7687369, 106.6896812], [10.7704446, 106.6920153], [10.7712328, 106.6931266], [10.7712084, 106.6933707], [10.7712944, 106.6934487], [10.7712549, 106.6937631], [10.7711701, 106.6954935], [10.7712246, 106.6954962], [10.7716294, 106.6952704], [10.7724371, 106.6948699], [10.772787, 106.6954284], [10.7731183, 106.69589], [10.7739958, 106.697121], [10.7748371, 106.6981499], [10.7758208, 106.6990461], [10.7768018, 106.6999227], [10.7779416, 106.7010248], [10.7791968, 106.702175], [10.7801873, 106.7010602], [10.7791303, 106.7001011], [10.7789434, 106.6999316], [10.7787528, 106.6997586]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_3c98fdfb369518c66d601b52d4ef2ac4);
+        
+    
+        var popup_6f9145e7591ffe1a1b616ccec64b1422 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_572d7fea44a2fab7fdcde9c44787e57e = $(`<div id="html_572d7fea44a2fab7fdcde9c44787e57e" style="width: 100.0%; height: 100.0%;">Path 2: Cost 1.91</div>`)[0];
+                popup_6f9145e7591ffe1a1b616ccec64b1422.setContent(html_572d7fea44a2fab7fdcde9c44787e57e);
+            
+        
+
+        poly_line_56f888f0d434ebc7c9ad2cae0fbbd861.bindPopup(popup_6f9145e7591ffe1a1b616ccec64b1422)
+        ;
+
+        
+    
+    
+            var poly_line_e624791873aa30c752696ac4437ed2db = L.polyline(
+                [[10.764258, 106.6822984], [10.7642283, 106.6822104], [10.7652208, 106.6818448], [10.7655926, 106.6818746], [10.76594, 106.6824196], [10.7679292, 106.6855017], [10.7678492, 106.6856693], [10.7675751, 106.6862458], [10.7676448, 106.6863], [10.7680186, 106.6866424], [10.7683614, 106.687003], [10.7687685, 106.6874113], [10.7688726, 106.6875178], [10.7699916, 106.6885977], [10.7687369, 106.6896812], [10.7704446, 106.6920153], [10.7712328, 106.6931266], [10.7712084, 106.6933707], [10.7712944, 106.6934487], [10.7712549, 106.6937631], [10.7711701, 106.6954935], [10.7712246, 106.6954962], [10.7716294, 106.6952704], [10.7724371, 106.6948699], [10.772787, 106.6954284], [10.7731183, 106.69589], [10.7739958, 106.697121], [10.7748371, 106.6981499], [10.7758208, 106.6990461], [10.7768018, 106.6999227], [10.777776, 106.6988723], [10.7786471, 106.6979087], [10.7795984, 106.6988104], [10.7787528, 106.6997586]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_3c98fdfb369518c66d601b52d4ef2ac4);
+        
+    
+        var popup_71aaea1b7765f99056dd686859868efd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_737d7762f36f952fcbfb025fb1ecd334 = $(`<div id="html_737d7762f36f952fcbfb025fb1ecd334" style="width: 100.0%; height: 100.0%;">Path 3: Cost 1.92</div>`)[0];
+                popup_71aaea1b7765f99056dd686859868efd.setContent(html_737d7762f36f952fcbfb025fb1ecd334);
+            
+        
+
+        poly_line_e624791873aa30c752696ac4437ed2db.bindPopup(popup_71aaea1b7765f99056dd686859868efd)
+        ;
+
+        
+    
+</script>
+</html>
